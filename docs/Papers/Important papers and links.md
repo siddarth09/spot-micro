@@ -9,5 +9,8 @@ Experimental Validation over Challenging Terrain](https://github.com/siddarth09/
 [MULTI-ROBOT SYSTEM CONTROLLERS](https://github.com/siddarth09/spot-micro/blob/documentation-papers-links/docs/Papers/Multi-robot_system_controllers.pdf)
 >Authors:C. ZIELIŃSKI, A. RYDZEWSKI AND W. SZYNKIEWICZ
 
+[Inverse Kinematic Analysis Of A Quadruped Robot](https://github.com/siddarth09/spot-micro/blob/documentation-papers-links/docs/Papers/Inverse-Kinematic-Analysis-Of-A-Quadruped-Robot.pdf)
+>Authors:Muhammed Arif Sen, Veli Bakircioglu, Mete Kalyoncu
 
-
+# **YOUTUBE LINKS**
+[Raspberry Pi Servo Motor Control - No Jitter](https://www.youtube.com/watch?v=_fdwE4EznYo)
