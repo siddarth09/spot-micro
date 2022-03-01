@@ -1,0 +1,6 @@
+num_servos: 12
+#PIN NUMBER AS GIVEN ON PCA9685
+
+LF_1: {num: 1,direction: 1}
+LF_2: {num: 2,direction: -1}
+LF_3: {num: 3,direction: 1}
