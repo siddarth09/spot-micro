@@ -1,5 +1,5 @@
 #SPOT_FORWARD
-from numpy import *   # imports all function so we don't have to use np.function()
+from numpy import *   
 import numpy as np
 
 # Physical dimensions and Link lengths
@@ -25,7 +25,7 @@ theta_3 = int(input("The Angle of Knee Joint"))
 theta_1 = (theta_1/180)*pi  # theta 1 in radians
 theta_2 = (theta_2/180)*pi  # theta 2 in radians
 theta_3 = (theta_3/180)*pi  # theta 3 in radians
-#dont know how to establish or get coordinates 
+#Need to get this coordinates  
 xm=0
 ym=0
 zm=0
