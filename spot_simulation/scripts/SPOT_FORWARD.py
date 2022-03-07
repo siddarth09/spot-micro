@@ -1,22 +1,27 @@
 #SPOT_FORWARD
-from numpy import *   
+from numpy import * 
 import numpy as np
-
+from math import *
 # Physical dimensions and Link lengths
 L = 6.2  # length of Robot m
 W = 5.2  # width of Robot m
 L1 = 0  # The Length of Side Swing Joint
 L2 = 6.9  # The Length of Hip Joint
 L3 = 0  #The Length of Knee Joint
-pi = 3.14
+pi = 3.14 
+
+#TRY using math.pi instead of assigning 
+
+#Is there any condition to check if all the sides are not zero
+
 # AnglesFrom odom topic 
-phi=45 #The Yaw Angle of Robot ϕ
-psi= 45 # The Pitch Angle of Robot ψ
-omega = 45 #The Roll Angle of Robot ω
+phi=radians(45) #The Yaw Angle of Robot ϕ
+psi= radians(45) # The Pitch Angle of Robot ψ
+omega =radians(45) #The Roll Angle of Robot ω
 #converting into radians 
-phi =(phi/180)*pi
+"""phi =(phi/180)*pi
 psi=(psi/180)*pi
-omega =(omega/180)*pi
+omega =(omega/180)*pi"""
 #variables 
 theta_1 = int(input("The Angle of Side Swing Joint"))  
 theta_2 = int(input("The Angle of Hip Joint "))  
@@ -25,6 +30,9 @@ theta_3 = int(input("The Angle of Knee Joint"))
 theta_1 = (theta_1/180)*pi  # theta 1 in radians
 theta_2 = (theta_2/180)*pi  # theta 2 in radians
 theta_3 = (theta_3/180)*pi  # theta 3 in radians
+
+#please use math function
+
 #Need to get this coordinates  
 xm=0
 ym=0
@@ -77,7 +85,9 @@ Tlb = Tm @ np.array([
         [0,1,0,0],
         [-np.sin(pi/2),0,np.cos(pi/2),W/2],
         [0,0,0,1]])
-                 
+               
+ 
+#ALSO Please label what is TLF tLB and other stuff
 #Transformation matrix
 T01= np.array([[np.cos(theta_1),-np.sin(theta_1),0,(-L1*np.cos(theta_1))],[np.sin(theta_1),np.cos(theta_1),0,(-L1*np.sin(theta_1))],[1,0,0,0],[0,0,0,1]])
 T12= np.array([[0,0,-1,0],[-1,0,0,0],[0,0,1,0],[0,0,0,1]])
