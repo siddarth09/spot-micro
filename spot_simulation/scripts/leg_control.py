@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
 
 from math import *
 import time
@@ -7,8 +7,6 @@ import busio
 import rospy
 from adafruit_pca9685 import PCA9685,PWMChannel
 from adafruit_servokit import ServoKit
-
-from spot_simulation.scripts.kinematics import Kinematics
 from spot_simulation.msg import gait_state
 i2c=busio.I2C(SCL,SDA)
 
@@ -24,7 +22,7 @@ class control:
         self.pca=PCA9685(i2c)
         self.pca.frequency=80
         self.servo_offset=[180,90,90]
-        self.contoller=Kinematics()
+        #self.contoller=Kinematics()
 
         self.gait=gait_state()
 
@@ -46,13 +44,16 @@ class control:
 
         if status=="SLEEPING":
             # only one leg
-            self.servokit.servo[0].angle=90
+            self.servokit.servo[0].angle=angles[0]
         elif status=="STANDING":
             self.servokit.servo[0].angle=145
             self.servokit.servo[1].angle=90
-        elif status=="RELAXING":
+    
 
-            for i in range(3):
-                self.servokit.servo[i].angle=angles[i]
+if __name__=="__main__":
+    rospy.init_node("leg")
+    robot=control()
+    rospy.Subscriber('/joint_state',gait_state,robot.joint_callback)
+    rospy.spin()
     
 
