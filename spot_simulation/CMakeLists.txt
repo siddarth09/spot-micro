@@ -52,7 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    gait_state.msg
-#   Message2.msg
+   JointAngles.msg
  )
 
 ## Generate services in the 'srv' folder
