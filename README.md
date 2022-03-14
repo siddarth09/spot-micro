@@ -21,3 +21,6 @@ THINGS TO ADD
 - [ ] Adding Servo,LCD and led light controls when the hardware is started
 - [ ] Configuring the Navigation stack
 - [ ] update documentation for tutorial, usage, application, hardware 
+
+
+[RESEARCH PAPER AND YOUTUBE LINKS](https://github.com/siddarth09/spot-micro/blob/documentation-papers-links/docs/Papers/Important%20papers%20and%20links.md) Check here :point_left:

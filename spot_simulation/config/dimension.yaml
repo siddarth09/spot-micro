@@ -1,0 +1,10 @@
+kinematics:
+    length: 540
+    width: 600
+    l1: 2
+    l2: 12.5
+    l3: 14.5
+    X: 10
+    Y: 8
+    Z: 18
+

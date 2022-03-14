@@ -1,0 +1,9 @@
+<launch>
+
+    <!--node name="kinematics" pkg="spot_simulation" type="kinematics.py"/-->
+    <!--node name="body" pkg="spot_simulation" type="leg_control.py" output="screen"/-->
+    <node name="imu" pkg="spot_simulation" type="odom_pub.py" output="screen"/>
+   
+    <rosparam command="load" file="$(find spot_simulation)/config/dimension.yaml" />
+
+</launch>

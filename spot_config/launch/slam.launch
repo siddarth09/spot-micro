@@ -1,0 +1,9 @@
+<launch>
+    <arg name="robot_name" default="/"/>
+    <arg name="rviz"       default="false"/>
+    
+    <arg if="$(eval arg('robot_name') == '/')"  name="frame_prefix" value="" />
+    <arg unless="$(eval arg('robot_name') == '/')" name="frame_prefix" value="$(arg robot_name)/" />
+    
+    
+</launch>
