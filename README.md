@@ -14,13 +14,11 @@ catkin_make
 
 ```
 
-THINGS TO ADD
-- [ ] Adding gmapping, karto and hector slam, if possible add rtab-map launch files
-- [ ] Adding amcl and movebase files for easier understanding 
-- [ ] Adding ekf and different worlds for the robot simulation
-- [ ] Adding Servo,LCD and led light controls when the hardware is started
-- [ ] Configuring the Navigation stack
-- [ ] update documentation for tutorial, usage, application, hardware 
-
-
 [RESEARCH PAPER AND YOUTUBE LINKS](https://github.com/siddarth09/spot-micro/blob/documentation-papers-links/docs/Papers/Important%20papers%20and%20links.md) Check here :point_left:
+
+
+### ABOUT SPOT-MICRO 
+
+Spot micro is open source quadruped robot and micro version of the dad "SPOT MINI", this robot can be used for various research purposes, and basic understanding of the GAIT of a robot dog. This also can be used for indoor house surveillance with the help of few cameras and sensors.
+
+
