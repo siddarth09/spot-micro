@@ -32,38 +32,38 @@ class SpotServoCheck:
 
     def STANCE(self):
         #BACK LEFT
-        self.kit.servo[0].angle=165
-        self.kit.servo[1].angle=20
+        self.kit.servo[0].angle=135
+        self.kit.servo[1].angle=15
         self.kit.servo[2].angle=0
         #FRONT LEFT
-        self.kit.servo[4].angle=55
-        self.kit.servo[5].angle=20
-        self.kit.servo[6].angle=0
+        self.kit.servo[4].angle=40
+        self.kit.servo[5].angle=42
+        self.kit.servo[6].angle=10
 
          #BACK RIGHT
-        self.kit.servo[8].angle=80
-        self.kit.servo[9].angle=30
-        self.kit.servo[10].angle=0
+        self.kit.servo[8].angle=130
+        self.kit.servo[9].angle=0
+        self.kit.servo[10].angle=100
 
         #FRONT RIGHT
-        self.kit.servo[12].angle=60
-        self.kit.servo[13].angle=75
+        self.kit.servo[12].angle=10
+        self.kit.servo[13].angle=80
 
-        self.kit.servo[14].angle=0
+        self.kit.servo[14].angle=20
 
     def SLEEP(self):
         #FRONT LEFT
-        self.kit.servo[0].angle=0
+        self.kit.servo[0].angle=90
         self.kit.servo[1].angle=0
         self.kit.servo[2].angle=0
         #BACK LEFT
-        self.kit.servo[4].angle=0
+        self.kit.servo[4].angle=10
         self.kit.servo[5].angle=0
         self.kit.servo[6].angle=0
       #BACK RIGHT
         self.kit.servo[8].angle=180
-        self.kit.servo[9].angle=60
-        self.kit.servo[10].angle=0
+        self.kit.servo[9].angle=0
+        self.kit.servo[10].angle=100
 
         #FRONT RIGHT
         self.kit.servo[12].angle=50
@@ -100,14 +100,14 @@ class SpotServoCheck:
 
 if __name__=="__main__":
     hip=SpotServoCheck()
-    
+     
     ''' hip.SLEEP()
     time.sleep(5)
     hip.STANCE()
     time.sleep(8)
     hip.SLEEP()'''
     '''time.sleep(3)'''
-   # hip.STANCE()
+    #hip.STANCE()
     hip.SLEEP()
    # hip.test()
     
