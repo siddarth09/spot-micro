@@ -1,0 +1,7 @@
+<launch>
+
+    
+    <node name="Stand" pkg="spot_simulation" type="StandMode.py" output="screen"/>
+    
+
+</launch>

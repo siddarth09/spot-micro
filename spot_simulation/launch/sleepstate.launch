@@ -1,0 +1,7 @@
+<launch>
+
+    
+    <node name="Sleep" pkg="spot_simulation" type="SleepMode.py" />
+    
+
+</launch>

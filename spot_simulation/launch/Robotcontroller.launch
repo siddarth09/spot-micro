@@ -1,0 +1,11 @@
+<launch>
+
+    
+    <node name="body" pkg="spot_simulation" type="RobotControl.py" output="screen"/>
+    
+    
+  
+   
+    <rosparam command="load" file="$(find spot_simulation)/config/dimension.yaml" />
+
+</launch>

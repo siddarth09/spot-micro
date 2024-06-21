@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="controller" pkg="spot_simulation" type="controller.py" output="screen" required="true"/>
+   
+    <rosparam command="load" file="$(find spot_simulation)/config/dimension.yaml" />
+
+</launch>
